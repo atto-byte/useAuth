@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useEffect, useState } from "react";
-import Auth0, { Auth0UserProfile, Auth0DecodedHash, Auth0Error } from "auth0-js";
+import Auth0, { Auth0UserProfile, Auth0DecodedHash, Auth0Error, WebAuth } from "auth0-js";
 
 import { authReducer, AuthReducerAction } from "./authReducer";
 import { handleAuthResult } from "./useAuth";
@@ -15,7 +15,7 @@ export interface AuthState {
 export interface AuthContextState {
   state: AuthState;
   dispatch: React.Dispatch<AuthReducerAction>;
-  auth0: Auth0.WebAuth;
+  auth0: WebAuth;
   callback_domain: string;
   navigate: any;
 }

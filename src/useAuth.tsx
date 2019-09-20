@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import Auth0, { Auth0DecodedHash } from "auth0-js";
+import { Auth0DecodedHash, Auth0ParseHashError, Auth0Error, WebAuth } from "auth0-js";
 
 import { AuthContext } from "./AuthProvider";
 import { AuthReducerAction } from 'authReducer';
 interface SetSession {
   dispatch: React.Dispatch<AuthReducerAction>;
-  auth0: Auth0.WebAuth;
+  auth0: WebAuth;
   authResult: Auth0DecodedHash;
 }
 
@@ -31,9 +31,9 @@ async function setSession({ dispatch, auth0, authResult }: SetSession) {
     });
 }
 interface HandleAuthResult {
-  err?: Auth0.Auth0Error | Auth0.Auth0ParseHashError | null;
+  err?: Auth0Error | Auth0ParseHashError | null;
   dispatch: React.Dispatch<AuthReducerAction>;
-  auth0: Auth0.WebAuth;
+  auth0: WebAuth;
   authResult: Auth0DecodedHash | null;
 }
 export const handleAuthResult = async ({
