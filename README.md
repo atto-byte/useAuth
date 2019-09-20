@@ -20,7 +20,7 @@
 ### 1. Install the hook
 
 ```
-$ yarn add react-use-auth
+$ yarn add use-auth0
 ```
 
 Downloads from npm, adds to your package.json, etc. You can use `npm` as well.
@@ -39,7 +39,7 @@ But of course server-side "you" will always be logged out.
 import React from "react";
 import { navigate } from "gatsby";
 
-import { AuthProvider } from "react-use-auth";
+import { AuthProvider } from "use-auth0";
 
 export const wrapRootElement = ({ element }) => (
     <AuthProvider
@@ -99,7 +99,7 @@ Any way of creating React pages should work, here's what I use for Gatsby.
 
 import React, { useEffect } from "react";
 
-import { useAuth } from "react-use-auth";
+import { useAuth } from "use-auth0";
 import Layout from "../components/layout";
 
 const Auth0CallbackPage = () => {
