@@ -1,10 +1,17 @@
 import { useContext } from "react";
+import Auth0, { Auth0DecodedHash } from "auth0-js";
 
 import { AuthContext } from "./AuthProvider";
+import { AuthReducerAction } from 'authReducer';
+interface SetSession {
+  dispatch: React.Dispatch<AuthReducerAction>;
+  auth0: Auth0.WebAuth;
+  authResult: Auth0DecodedHash;
+}
 
-async function setSession({ dispatch, auth0, authResult }) {
+async function setSession({ dispatch, auth0, authResult }: SetSession) {
     return new Promise((resolve, reject) => {
-        auth0.client.userInfo(authResult.accessToken, (err, user) => {
+        auth0.client.userInfo(authResult.accessToken as string, (err, user) => {
             if (err) {
                 dispatch({
                     type: "error",
@@ -23,13 +30,18 @@ async function setSession({ dispatch, auth0, authResult }) {
         });
     });
 }
-
+interface HandleAuthResult {
+  err?: Auth0.Auth0Error | Auth0.Auth0ParseHashError | null;
+  dispatch: React.Dispatch<AuthReducerAction>;
+  auth0: Auth0.WebAuth;
+  authResult: Auth0DecodedHash | null;
+}
 export const handleAuthResult = async ({
     err,
     dispatch,
     auth0,
     authResult
-}) => {
+}: HandleAuthResult) => {
     if (authResult && authResult.accessToken && authResult.idToken) {
         await setSession({ dispatch, auth0, authResult });
 
@@ -47,14 +59,12 @@ export const handleAuthResult = async ({
             isAuthenticating: false
         });
 
-        return false;
-    }
+      }
+    return false;
 };
 
 export const useAuth = () => {
-    const { state, dispatch, auth0, callback_domain, navigate } = useContext(
-        AuthContext
-    );
+    const { state, dispatch, auth0, callback_domain, navigate } = useContext(AuthContext);
 
     const login = () => {
         auth0.authorize();

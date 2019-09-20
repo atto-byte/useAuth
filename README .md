@@ -4,7 +4,7 @@
     <img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-10-orange.svg?style=round-square"/>
   </a>
   <img alt="Version" src="https://img.shields.io/badge/version-0.4.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Swizec/useAuth/blob/master/LICENSE">
+  <a href="https://github.com/atto-byte/useAuth/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
 </p>
@@ -15,7 +15,7 @@
 
 ## How to use useAuth
 
-[`useAuth`](https://github.com/Swizec/useAuth) is designed to be quick to setup. You'll need an Auth0 account with an app domain and client id.
+[`useAuth`](https://github.com/atto-byte/useAuth) is designed to be quick to setup. You'll need an Auth0 account with an app domain and client id.
 
 ### 1. Install the hook
 
@@ -242,8 +242,8 @@ Since version 0.4.0 useAuth exposes the entire Auth0 authResult object so you ca
 
 For refence:
 
--   https://github.com/Swizec/useAuth/issues/11
--   https://github.com/Swizec/useAuth/issues/22
+-   https://github.com/atto-byte/useAuth/issues/11
+-   https://github.com/atto-byte/useAuth/issues/22
 
 Like this:
 
@@ -263,15 +263,15 @@ You can try it out here 👉 https://gatsby-useauth-example.now.sh/
 
 ## Author
 
-👤 **Swizec Teller <swizec@swizec.com>**
+👤 **atto-byte Teller <atto-byte@atto-byte.com>**
 
--   Github: [@swizec](https://github.com/swizec)
--   Twitter: [@swizec](https://twitter.com/swizec)
--   Blog: [swizec.com/blog](https://swizec.com/blog)
+-   Github: [@atto-byte](https://github.com/atto-byte)
+-   Twitter: [@atto-byte](https://twitter.com/atto-byte)
+-   Blog: [atto-byte.com/blog](https://atto-byte.com/blog)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Swizec/useAuth/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/atto-byte/useAuth/issues).
 
 I am looking to support other authentication providers. Please help :)
 
@@ -281,8 +281,8 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2019 [Swizec Teller <swizec@swizec.com>](https://github.com/swizec).<br />
-This project is [MIT](https://github.com/Swizec/useAuth/blob/master/LICENSE) licensed.
+Copyright © 2019 [atto-byte Teller <atto-byte@atto-byte.com>](https://github.com/atto-byte).<br />
+This project is [MIT](https://github.com/atto-byte/useAuth/blob/master/LICENSE) licensed.
 
 ---
 
@@ -297,18 +297,18 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/dejanstrancar"><img src="https://avatars1.githubusercontent.com/u/3260215?v=4" width="100px;" alt="Dejan"/><br /><sub><b>Dejan</b></sub></a><br /><a href="#example-dejanstrancar" title="Examples">💡</a></td>
-    <td align="center"><a href="https://jasonformat.com"><img src="https://avatars2.githubusercontent.com/u/105127?v=4" width="100px;" alt="Jason Miller"/><br /><sub><b>Jason Miller</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=developit" title="Code">💻</a></td>
+    <td align="center"><a href="https://jasonformat.com"><img src="https://avatars2.githubusercontent.com/u/105127?v=4" width="100px;" alt="Jason Miller"/><br /><sub><b>Jason Miller</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=developit" title="Code">💻</a></td>
     <td align="center"><a href="https://graham.now.sh"><img src="https://avatars1.githubusercontent.com/u/4955937?v=4" width="100px;" alt="Graham Barber"/><br /><sub><b>Graham Barber</b></sub></a><br /><a href="#question-puregarlic" title="Answering Questions">💬</a></td>
-    <td align="center"><a href="https://github.com/MateusGabi"><img src="https://avatars3.githubusercontent.com/u/14940643?v=4" width="100px;" alt="Mateus Gabi"/><br /><sub><b>Mateus Gabi</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=MateusGabi" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://jgalat.dev/"><img src="https://avatars3.githubusercontent.com/u/9066191?v=4" width="100px;" alt="Jorge Galat"/><br /><sub><b>Jorge Galat</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=jgalat" title="Code">💻</a></td>
-    <td align="center"><a href="http://swizec.com"><img src="https://avatars0.githubusercontent.com/u/56883?v=4" width="100px;" alt="Swizec Teller"/><br /><sub><b>Swizec Teller</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=Swizec" title="Code">💻</a> <a href="https://github.com/Swizec/useAuth/commits?author=Swizec" title="Documentation">📖</a> <a href="#blog-Swizec" title="Blogposts">📝</a> <a href="#example-Swizec" title="Examples">💡</a> <a href="#maintenance-Swizec" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/NWRichmond"><img src="https://avatars0.githubusercontent.com/u/5732000?v=4" width="100px;" alt="Nick Richmond"/><br /><sub><b>Nick Richmond</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=NWRichmond" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/MateusGabi"><img src="https://avatars3.githubusercontent.com/u/14940643?v=4" width="100px;" alt="Mateus Gabi"/><br /><sub><b>Mateus Gabi</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=MateusGabi" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://jgalat.dev/"><img src="https://avatars3.githubusercontent.com/u/9066191?v=4" width="100px;" alt="Jorge Galat"/><br /><sub><b>Jorge Galat</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=jgalat" title="Code">💻</a></td>
+    <td align="center"><a href="http://atto-byte.com"><img src="https://avatars0.githubusercontent.com/u/56883?v=4" width="100px;" alt="atto-byte Teller"/><br /><sub><b>atto-byte Teller</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=atto-byte" title="Code">💻</a> <a href="https://github.com/atto-byte/useAuth/commits?author=atto-byte" title="Documentation">📖</a> <a href="#blog-atto-byte" title="Blogposts">📝</a> <a href="#example-atto-byte" title="Examples">💡</a> <a href="#maintenance-atto-byte" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/NWRichmond"><img src="https://avatars0.githubusercontent.com/u/5732000?v=4" width="100px;" alt="Nick Richmond"/><br /><sub><b>Nick Richmond</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=NWRichmond" title="Code">💻</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="http://olliemonk.com"><img src="https://avatars0.githubusercontent.com/u/7108120?v=4" width="100px;" alt="Ollie Monk"/><br /><sub><b>Ollie Monk</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=omonk" title="Documentation">📖</a> <a href="https://github.com/Swizec/useAuth/commits?author=omonk" title="Code">💻</a></td>
-    <td align="center"><a href="http://henrikwenz.de/"><img src="https://avatars3.githubusercontent.com/u/1265681?v=4" width="100px;" alt="Henrik Wenz"/><br /><sub><b>Henrik Wenz</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/issues?q=author%3AHaNdTriX" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://twitter.com/maxchehab"><img src="https://avatars1.githubusercontent.com/u/13038919?v=4" width="100px;" alt="Max Chehab"/><br /><sub><b>Max Chehab</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=maxchehab" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://joelb.dev"><img src="https://avatars0.githubusercontent.com/u/6668097?v=4" width="100px;" alt="Joel Bartlett"/><br /><sub><b>Joel Bartlett</b></sub></a><br /><a href="https://github.com/Swizec/useAuth/commits?author=murbar" title="Code">💻</a></td>
+    <td align="center"><a href="http://olliemonk.com"><img src="https://avatars0.githubusercontent.com/u/7108120?v=4" width="100px;" alt="Ollie Monk"/><br /><sub><b>Ollie Monk</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=omonk" title="Documentation">📖</a> <a href="https://github.com/atto-byte/useAuth/commits?author=omonk" title="Code">💻</a></td>
+    <td align="center"><a href="http://henrikwenz.de/"><img src="https://avatars3.githubusercontent.com/u/1265681?v=4" width="100px;" alt="Henrik Wenz"/><br /><sub><b>Henrik Wenz</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/issues?q=author%3AHaNdTriX" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://twitter.com/maxchehab"><img src="https://avatars1.githubusercontent.com/u/13038919?v=4" width="100px;" alt="Max Chehab"/><br /><sub><b>Max Chehab</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=maxchehab" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://joelb.dev"><img src="https://avatars0.githubusercontent.com/u/6668097?v=4" width="100px;" alt="Joel Bartlett"/><br /><sub><b>Joel Bartlett</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=murbar" title="Code">💻</a></td>
   </tr>
 </table>
 

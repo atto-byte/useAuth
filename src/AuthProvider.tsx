@@ -1,13 +1,33 @@
 import React, { createContext, useReducer, useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import Auth0 from "auth0-js";
+import Auth0, { Auth0UserProfile, Auth0DecodedHash, Auth0Error } from "auth0-js";
 
-import { authReducer } from "./authReducer";
+import { authReducer, AuthReducerAction } from "./authReducer";
 import { handleAuthResult } from "./useAuth";
 
-export const AuthContext = createContext(null);
+export interface AuthState {
+  user: null | Auth0UserProfile,
+  expiresAt: null | number,
+  isAuthenticating: boolean,
+  authResult: Auth0DecodedHash | null,
+  errorType: string | null,
+  error: Auth0Error | null
+}
+export interface AuthContextState {
+  state: AuthState;
+  dispatch: React.Dispatch<AuthReducerAction>;
+  auth0: Auth0.WebAuth;
+  callback_domain: string;
+  navigate: any;
+}
+interface AuthProviderProps {
+  navigate: (route: string) => void;
+  auth0_domain: string;
+  auth0_client_id: string;
+  auth0_params?: any;
+}
+export const AuthContext = createContext<AuthContextState>({} as AuthContextState);
 
-export const AuthProvider = ({
+export const AuthProvider: React.FC<AuthProviderProps> = ({
     children,
     navigate,
     auth0_domain,
@@ -33,9 +53,12 @@ export const AuthProvider = ({
 
     // Holds authentication state
     const [state, dispatch] = useReducer(authReducer, {
-        user: {},
+        user: null,
         expiresAt: null,
-        isAuthenticating: false
+        isAuthenticating: false,
+        authResult:null,
+        errorType: null,
+        error: null
     });
 
     const [contextValue, setContextValue] = useState({
@@ -59,7 +82,7 @@ export const AuthProvider = ({
         dispatch({
             type: "toggleAuthenticating"
         });
-        auth0.checkSession({}, (err, authResult) => {
+        auth0.checkSession({}, (err, authResult: Auth0DecodedHash) => {
             if (err) {
                 dispatch({
                     type: "error",
@@ -79,10 +102,4 @@ export const AuthProvider = ({
     );
 };
 
-AuthProvider.propTypes = {
-    children: PropTypes.element,
-    navigate: PropTypes.func,
-    auth0_domain: PropTypes.string,
-    auth0_client_id: PropTypes.string,
-    auth0_params: PropTypes.object
-};
+
