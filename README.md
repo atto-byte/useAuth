@@ -11,7 +11,7 @@
 
 > The simplest way to add authentication to your React app. Handles everything for you. Users, login forms, redirects, sharing state between components. Everything
 
-![](https://s3.amazonaws.com/techletter.app/screenshot-1565368397655.png)
+## TSDX Implementation of https://github.com/Swizec/useAuth
 
 ## How to use useAuth
 
