@@ -1,6 +1,6 @@
 {
   "name": "use-auth0",
-  "version": "0.1.3",
+  "version": "0.1.3-development",
   "main": "dist/index.js",
   "module": "dist/useauth0.esm.js",
   "typings": "dist/index.d.ts",
@@ -11,7 +11,8 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
-    "lint": "tsdx lint"
+    "lint": "tsdx lint",
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -38,8 +39,13 @@
     "husky": "^3.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "semantic-release": "^15.13.24",
     "tsdx": "^0.9.2",
     "tslib": "^1.10.0",
     "typescript": "^3.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atto-byte/useAuth.git"
   }
 }
