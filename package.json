@@ -12,7 +12,7 @@
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "lint": "tsdx lint",
-    "release": "semantic-release"
+    "release": "dotenv -- semantic-release"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -36,6 +36,7 @@
     "@types/jest": "^24.0.18",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "dotenv-cli": "^2.0.1",
     "husky": "^3.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
