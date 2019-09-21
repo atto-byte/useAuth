@@ -1,9 +1,5 @@
 <h1 align="center">useAuth – the simplest way to add authentication to your React app</h1>
 <p> 
-  <a href="#contributors-">
-    <img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-10-orange.svg?style=round-square"/>
-  </a>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.4.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/atto-byte/useAuth/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
@@ -240,11 +236,6 @@ For a more detailed understanding of why this is happening you can have a read t
 
 Since version 0.4.0 useAuth exposes the entire Auth0 authResult object so you can access your user's id or access token. This is useful when you have to log the user into your own backend as well as the frontend.
 
-For refence:
-
--   https://github.com/atto-byte/useAuth/issues/11
--   https://github.com/atto-byte/useAuth/issues/22
-
 Like this:
 
 ```javascript
@@ -257,17 +248,7 @@ function SomeComponent() {
 }
 ```
 
----
 
-You can try it out here 👉 https://gatsby-useauth-example.now.sh/
-
-## Author
-
-👤 **atto-byte Teller <atto-byte@atto-byte.com>**
-
--   Github: [@atto-byte](https://github.com/atto-byte)
--   Twitter: [@atto-byte](https://twitter.com/atto-byte)
--   Blog: [atto-byte.com/blog](https://atto-byte.com/blog)
 
 ## 🤝 Contributing
 
@@ -284,34 +265,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [atto-byte Teller <atto-byte@atto-byte.com>](https://github.com/atto-byte).<br />
 This project is [MIT](https://github.com/atto-byte/useAuth/blob/master/LICENSE) licensed.
 
----
 
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/dejanstrancar"><img src="https://avatars1.githubusercontent.com/u/3260215?v=4" width="100px;" alt="Dejan"/><br /><sub><b>Dejan</b></sub></a><br /><a href="#example-dejanstrancar" title="Examples">💡</a></td>
-    <td align="center"><a href="https://jasonformat.com"><img src="https://avatars2.githubusercontent.com/u/105127?v=4" width="100px;" alt="Jason Miller"/><br /><sub><b>Jason Miller</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=developit" title="Code">💻</a></td>
-    <td align="center"><a href="https://graham.now.sh"><img src="https://avatars1.githubusercontent.com/u/4955937?v=4" width="100px;" alt="Graham Barber"/><br /><sub><b>Graham Barber</b></sub></a><br /><a href="#question-puregarlic" title="Answering Questions">💬</a></td>
-    <td align="center"><a href="https://github.com/MateusGabi"><img src="https://avatars3.githubusercontent.com/u/14940643?v=4" width="100px;" alt="Mateus Gabi"/><br /><sub><b>Mateus Gabi</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=MateusGabi" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://jgalat.dev/"><img src="https://avatars3.githubusercontent.com/u/9066191?v=4" width="100px;" alt="Jorge Galat"/><br /><sub><b>Jorge Galat</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=jgalat" title="Code">💻</a></td>
-    <td align="center"><a href="http://atto-byte.com"><img src="https://avatars0.githubusercontent.com/u/56883?v=4" width="100px;" alt="atto-byte Teller"/><br /><sub><b>atto-byte Teller</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=atto-byte" title="Code">💻</a> <a href="https://github.com/atto-byte/useAuth/commits?author=atto-byte" title="Documentation">📖</a> <a href="#blog-atto-byte" title="Blogposts">📝</a> <a href="#example-atto-byte" title="Examples">💡</a> <a href="#maintenance-atto-byte" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/NWRichmond"><img src="https://avatars0.githubusercontent.com/u/5732000?v=4" width="100px;" alt="Nick Richmond"/><br /><sub><b>Nick Richmond</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=NWRichmond" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://olliemonk.com"><img src="https://avatars0.githubusercontent.com/u/7108120?v=4" width="100px;" alt="Ollie Monk"/><br /><sub><b>Ollie Monk</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=omonk" title="Documentation">📖</a> <a href="https://github.com/atto-byte/useAuth/commits?author=omonk" title="Code">💻</a></td>
-    <td align="center"><a href="http://henrikwenz.de/"><img src="https://avatars3.githubusercontent.com/u/1265681?v=4" width="100px;" alt="Henrik Wenz"/><br /><sub><b>Henrik Wenz</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/issues?q=author%3AHaNdTriX" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://twitter.com/maxchehab"><img src="https://avatars1.githubusercontent.com/u/13038919?v=4" width="100px;" alt="Max Chehab"/><br /><sub><b>Max Chehab</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=maxchehab" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://joelb.dev"><img src="https://avatars0.githubusercontent.com/u/6668097?v=4" width="100px;" alt="Joel Bartlett"/><br /><sub><b>Joel Bartlett</b></sub></a><br /><a href="https://github.com/atto-byte/useAuth/commits?author=murbar" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
